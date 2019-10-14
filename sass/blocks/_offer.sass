@@ -1,0 +1,130 @@
+.offer
+  padding-top: 77px
+  padding-bottom: 92px
+  background: url('../img/offer/offer-bg.png') no-repeat
+  background-position: right
+  background-size: contain
+  box-sizing: border-box
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #fff
+  &-block
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &__input
+    width: 240px
+    margin-bottom: 30px
+    padding-top: 23px
+    padding-left: 29px
+    &:first-child
+      margin-right: 10px
+      padding-left: 23px
+  &__button
+    max-width: 495px
+    width: 100%
+    min-height: 70px
+    margin-bottom: 29px
+    font-size: 16px
+  &__info
+    width: 224px
+    display: block
+  &__contacts
+    display: flex
+    justify-content: space-between
+  &__info
+    font-size: 15px
+    line-height: 24px
+    +reg
+  &__phone
+    font-size: 15px
+    +bold
+    line-height: 1.46
+  &-call
+    padding-right: 100px
+    width: 192px
+    display: block
+.section
+  &-title
+    width: 360px
+    font-size: 24px
+    line-height: 35px
+    +bold
+    margin-bottom: 19px
+  &-subtitle
+    display: block
+    width: 232px
+    font-size: 16px
+    +reg
+    margin-bottom: 30px
+    line-height: 1.2
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &-block
+      padding-right: 0
+    &__input
+      max-width: 260px
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      max-width: 260px
+      font-size: 13px
+    &__contacts
+      flex-direction: column
+    &-call
+      margin-top: 14px
+@media (max-width: 768px)
+  .offer
+    background: #fff
+    &-block
+      width: 100%
+    &__input
+      max-width: 540px
+    &__button
+      max-width: 540px
+    &__contacts
+      max-width: 540px
+      width: 100%
+      flex-direction: row
+      justify-content: space-evenly
+    &-call
+      margin-top: 0
+      padding-right: 0
+@media (max-width: 567px)
+  .offer
+    padding-top: 50px
+    padding-bottom: 50px
+    &__contacts
+      flex-direction: column
+      padding-left: 5px
+    &__input
+      max-width: 275px
+      height: 65px
+      padding-top: 0
+      padding-left: 23px
+    &__button
+      max-width: 275px
+      margin-bottom: 19px
+    &-call
+      margin-top: 8px
+  .section
+    &-title
+      font-size: 18px
+      line-height: 1.2
+      width: 266px
+    &-subtitle
+      font-size: 14px
+      margin-bottom: 26px
+  .button-text
+    width: 151px
+    font-size: 14px
+    margin: 0 auto
+    display: block
+    line-height: 1.3

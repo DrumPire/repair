@@ -1,0 +1,51 @@
+body 
+  font-family: +reg
+img 
+  max-width: 100%
+a 
+  text-decoration: none
+  color: $text-color
+  &:hover
+    color: lighten($text-color, 10%)
+.container
+  width: 1170px
+  margin: auto
+.button
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  height: 49px
+  width: 170px
+  cursor: pointer
+  font-size: 13px
+  +bold 
+  &:hover
+    background-color: lighten($main-color, 10%)
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
+  box-sizing: border-box
+  &:focus
+    border: 1px solid $main-color
+.arrows
+  &-left, &-right
+    &:hover
+      cursor: pointer
+
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+    width: 90%
+@media (max-width: 768px)
+  .container
+    max-width: 750px 
+    width: 90%
+@media (max-width: 567px)
+  .button 
+      width: 136px
+      height: 39px
+      border-radius: 5px
+  .input
+    padding: 0 23px

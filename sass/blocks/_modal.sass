@@ -1,0 +1,116 @@
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none 
+  &_active
+    display: flex 
+    overflow: hidden
+  &-dialog
+    position: relative
+    margin: auto
+    max-width: 570px
+    width: 100%
+    height: 674px
+    background-color: #ffffff
+    box-sizing: border-box
+    &__close
+      position: absolute
+      top: 0
+      right: 0
+  &__title
+    max-width: 291px
+    margin: 0 auto
+    padding-top: 80px
+    text-align: center
+    font-size: 22px
+    line-height: 33px
+    +bold
+  &__subtitle
+    display: block
+    margin-top: 46px
+    text-align: center
+    font-size: 16px
+    +reg
+  &__form
+    margin-top: 53px
+    margin-bottom: 33px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__input
+    width: 370px
+    &:first-child
+      margin-bottom: 15px
+  &__button
+    display: block
+    margin-top: 30px
+    width: 370px  
+    height: 70px
+    font-size: 16px
+    +bold
+  &__info
+    display: block
+    width: 271px
+    margin: 0 auto
+    text-align: center
+    font-size: 15px
+    +reg
+  &__phone
+    display: block
+    text-align: center
+    padding-top: 13px
+    font-size: 24px
+    +bold
+.no-scroll
+  overflow: hidden
+@media (max-width: 768px)
+  .modal
+    &-dialog
+      max-width: 570px
+      width: 65%
+      padding-bottom: 40px
+      height: auto
+    &__input
+      max-width: 260px
+      width: 100%
+      &:first-child
+        margin-bottom: 10px
+    &__button
+      display: block
+      margin-top: 20px
+      max-width: 260px 
+      height: 70px
+      font-size: 16px
+      +bold
+@media (max-width: 567px)
+  .modal
+    &-dialog
+      max-width: 470px
+      width: 85%
+      padding-bottom: 30px
+      height: auto
+    &__input
+      height: 40px
+      width: 75%
+      &:first-child
+        margin-bottom: 10px
+    &__button
+      display: block
+      margin-top: 20px
+      max-width: 260px 
+      width: 75%
+      height: 40px
+      font-size: 14px
+      +bold
+    &__title
+      font-size: 18px
+    &__subtitle
+      font-size: 14px
+    &__info
+      font-size: 14px
+    &__phone
+      font-size: 18px
