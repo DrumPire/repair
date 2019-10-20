@@ -1,0 +1,250 @@
+.brif
+  background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+  background-position: left center, right center
+  background-size: 50%, cover
+  background-repeat: repeat-y, no-repeat
+  &-block
+    display: flex
+    margin-top: 227px
+    padding-top: 100px
+    padding-bottom: 7px
+  &__interview
+    width: 50%
+  &__form
+    width: 50%
+    padding-left: 213px
+    text-align: center
+    position: relative
+  &__input
+    width: 100%
+    max-width: 370px
+    height: 65px
+    margin-bottom: 15px
+  &__button
+    width: 100%
+    max-width: 370px
+    height: 70px
+    margin-top: 15px
+    margin-bottom: 30px
+  &__description
+    display: inline-block
+    font-size: 15px
+    line-height: 24px
+    +reg
+.input
+  &-group
+    position: relative
+.interview
+  padding-right: 71px
+  &__title
+    width: 520px
+    font-size: 22px
+    line-height: 33px
+    margin-bottom: 29px
+    +bold
+  &__subtitle
+    display: block
+    font-size: 16px
+    line-height: 45px
+    margin-bottom: 80px
+    +reg  
+  &-list
+    list-style: none
+    padding: 0
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 26px
+      +bold
+    &__counter
+      display: inline-block
+      margin-right: 32px
+      font-size: 14px
+      text-align: center
+      line-height: 35px
+      width: 35px
+      height: 35px
+      border: 2px solid $text-color
+      border-radius: 50%
+      padding-left: 1px
+      box-sizing: border-box
+    &__text
+      max-width: 400px
+.crutch
+  margin-bottom: 27px
+  &-two
+    margin-bottom: 36px
+.text
+  &-one   
+    letter-spacing: 1px
+  &-two
+    letter-spacing: 1px
+  &-three
+    padding-top: 8px
+    line-height: 1.2
+    letter-spacing: 1px
+  &-four
+    max-width: 294px
+    letter-spacing: 1px
+.form
+  &__title
+    font-size: 22px
+    line-height: 33px
+    margin-bottom: 28px
+    +bold
+  &__subtitle
+    display: block
+    font-size: 16px
+    line-height: 45px
+    margin-bottom: 36px
+    +reg
+.visibl-brif
+  display: block
+  position: absolute
+  bottom: 22px
+  left: 69%
+  transform: translateX(-50%)
+  color: #28F41A
+@media (max-width: 1200px)
+  .brif
+    &__form
+      padding-left: 30px
+  .interview
+    padding-right: 0
+    &__title
+      font-size: 20px
+      margin-bottom: 15px
+      width: auto
+    &__subtitle
+      margin-bottom: 30px
+    &-list
+      &__text
+        font-size: 14px
+        max-width: 300px
+        width: 90%
+      &__counter
+        margin-right: 20px
+  .form
+    &__title
+      font-size: 20px
+      margin-bottom: 15px
+      width: auto
+    &__subtitle
+      margin-bottom: 30px
+  .visibl-brif
+    left: 54%
+@media (max-width: 768px)
+  .brif
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: top center, bottom center
+    background-size: 100% 50%, cover
+    background-repeat: repeat-x, no-repeat
+    &-block
+      flex-direction: column 
+    &__form
+      margin-top: 80px
+  .interview
+    &__title
+      width: 520px
+    &-list
+      &__item
+        margin-bottom: 15px
+  .visibl-brif
+    bottom: 51px
+@media (max-width: 567px)
+  .brif
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: top center, bottom center
+    background-size: 100% 508px, cover
+    background-repeat: repeat-x, no-repeat
+    &-block
+      margin-top: 91px
+      padding-top: 45px
+    &__input
+      width: 275px
+      margin-bottom: 9px
+    &__button
+      width: 275px
+      margin-top: 3px
+      margin-bottom: 24px
+    &__form
+      width: 100%
+      padding-left: 0
+      margin-top: 93px
+    &__description
+      font-size: 14px
+      width: 135px
+    &__title
+      font-size: 18px
+      margin-bottom: 15px
+      width: auto
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 30px
+    &__interview
+      width: 100%
+  .interview
+    padding-right: 0
+    &__title
+      width: 217px
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 14px
+      +bold
+    &__subtitle
+      display: block
+      font-size: 14px
+      line-height: 1.2
+      width: 173px
+      margin-bottom: 38px
+      +reg 
+    &-list
+      &__counter
+        margin-right: 9px
+      &__item
+        margin-bottom: 25px
+        align-items: stretch
+      &__text
+        max-width: 192px
+        width: 90%
+        line-height: 1.2
+  .text
+    &-one
+      max-width: 211px
+      width: 90%
+      padding-top: 11px
+      letter-spacing: normal
+    &-two
+      max-width: 235px
+      width: 90%
+      padding-top: 8px
+      letter-spacing: 0
+    &-three
+      margin-top: -10px
+      padding-top: 3px
+      letter-spacing: normal
+    &-four
+      padding-top: 10px
+      letter-spacing: normal
+  .crutch
+    margin-bottom: 25px
+  .form
+    &__title
+      font-size: 18px
+      line-height: 25.35px
+      width: 277px
+      margin-bottom: 26px
+    &__subtitle
+      font-size: 14px
+      line-height: 1.2
+      margin-bottom: 33px
+  .visibl-brif
+    left: 52%
+@media screen and(min-width: 321px) and(max-width: 1200px)
+  .brif
+    &__description
+      display: block
+      margin: 0 auto
+  .form
+    &__title
+      margin: 0 auto  

@@ -1,0 +1,136 @@
+.guarantee
+  background-image: url('../img/guarantee/guarantee-bg.jpg')
+  background-repeat: no-repeat
+  &-title
+    margin-top: 96px
+    margin-bottom: 94px
+    padding-top: 85px
+    padding-bottom: 100px
+  &__title
+    font-size: 32px
+    line-height: 50px
+    text-align: center
+    max-width: 911px
+    width: 100%
+    margin: 0 auto
+    +reg
+  &-order
+    display: flex
+    justify-content: space-between
+    margin-bottom: 134px
+.order
+  &__card
+    position: relative
+  &__text
+    position: absolute
+    top: 21px
+    left: 25px
+    width: 290px
+    font-size: 16px
+    line-height: 23px
+    +reg
+    span  
+      +bold
+.certificate
+  &__title
+    font-size: 30px
+    line-height: 45px
+    text-align: center
+    width: 645px
+    margin: 0 auto
+    +bold
+  &__image
+    margin-top: 91px
+    &:first-child
+      margin-right: 7px
+    &:last-child
+      margin-right: -18px
+  &__text
+    width: 290px
+    margin-top: 36px
+    text-align: center
+    font-size: 18px
+    line-height: 24px
+    padding-right: 20px
+    +reg
+  &-wrapper
+    display: flex
+    justify-content: space-around
+@media (max-width: 1200px)
+  .guarantee
+    &-title
+      font-size: 18px
+    &-order
+      flex-direction: column
+      align-items: center
+  .certificate
+    &-wrapper
+      flex-direction: column
+      align-items: center
+    &__title
+      width: 90%
+  .order
+    &__card
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+@media (max-width: 567px)
+  .guarantee
+    background-image: url('../img/guarantee/mob-bg.jpg')
+    background-repeat: no-repeat
+    &-order
+      margin-bottom: 73px
+    &-title
+      margin-top: 75px
+      margin-bottom: 59px
+      padding-top: 69px
+      padding-bottom: 78px
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      width: 258px
+  .order
+    &__card
+      margin-bottom: 32px
+    &__text
+      font-size: 12px
+      line-height: 16.83px
+      width: 217px
+      top: 17px
+      left: 13px
+    &__image
+      width: 272px
+  .certificate
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      width: 236px
+    &-wrapper
+      display: block
+    &__image
+      margin-top: 49px
+      &:first-child
+        margin-right: 0
+      &:last-child
+        margin-right: 0
+    &__text
+      padding-top: 24px
+      margin: 0 auto
+      width: 232px
+      font-size: 14px
+      line-height: 1.2
+  .crutch
+    &-one 
+      padding-top: 30px
+@media screen and(min-width: 321px) and(max-width: 1200px)
+  .guarantee
+    background-repeat: repeat-x
+    &__image
+      display: block
+      margin: 0 auto 
+  .certificate
+    &__text
+      padding-right: 0
+  .price
+    &__card
+      margin-bottom: 30px

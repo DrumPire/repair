@@ -1,5 +1,5 @@
 .steps
-  padding-top: 128px
+  padding-top: 124px
   &__title
     margin: 0 auto
     margin-bottom: 49px
@@ -9,7 +9,7 @@
     width: 654px
   &__subtitle
     margin: 0 auto
-    margin-bottom: 66px
+    margin-bottom: 70px
     font-size: 20px
     width: 188px
 .steps-block
@@ -54,20 +54,23 @@
     &-block
       flex-wrap: wrap
       justify-content: center
+    &__title
+      width: 90%
   .step
     width: 50%
     margin-bottom: 22px
     &::after
       display: none
+    
 @media (max-width: 567px)
   .steps
-    padding-top: 24px
+    padding-top: 22px
     &__title
       font-size: 18px
       width: 250px
       line-height: 1.2
       padding-right: 10px
-      margin-bottom: 24px
+      margin-bottom: 27px
     &__subtitle
       font-size: 14px
       width: 135px
@@ -94,3 +97,13 @@
     margin-bottom: 25px
   .calendar
     width: 119px
+@media screen and(min-width: 321px) and(max-width: 1200px)
+  .price
+    &__card
+      margin: 0 auto
+    &__subtitle
+      text-align: center
+  .step
+    &__image
+      margin: 0 auto
+      margin-bottom: 26px

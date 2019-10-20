@@ -1,5 +1,6 @@
 body 
   font-family: +reg
+  overflow-x: hidden
 img 
   max-width: 100%
 a 
@@ -33,7 +34,20 @@ a
   &-left, &-right
     &:hover
       cursor: pointer
-
+span.invalid
+  color: red
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 0
+span.offer-invalid
+  color: red
+  position: absolute
+  left: 36%
+  transform: translateX(-50%)
+  bottom: 0
+// .form
+//   position: relative
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -49,3 +63,17 @@ a
       border-radius: 5px
   .input
     padding: 0 23px
+  span.invalid
+    color: red
+    position: absolute
+    left: 45%
+    transform: translateX(-40%)
+    bottom: 0
+    font-size: 13px
+  span.offer-invalid
+    color: red
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 100%
+    font-size: 13px

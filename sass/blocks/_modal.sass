@@ -41,6 +41,7 @@
     display: flex
     flex-direction: column
     align-items: center
+    position: relative
   &__input
     width: 370px
     &:first-child
@@ -65,6 +66,13 @@
     padding-top: 13px
     font-size: 24px
     +bold
+.visibl-modal
+  display: block
+  position: absolute
+  bottom: -24px
+  left: 50%
+  transform: translateX(-50%)
+  color: #28F41A
 .no-scroll
   overflow: hidden
 @media (max-width: 768px)
@@ -95,22 +103,31 @@
       height: auto
     &__input
       height: 40px
-      width: 75%
+      width: 100%
       &:first-child
         margin-bottom: 10px
     &__button
       display: block
       margin-top: 20px
       max-width: 260px 
-      width: 75%
+      width: 88%
       height: 40px
       font-size: 14px
       +bold
     &__title
       font-size: 18px
+      padding-top: 45px
     &__subtitle
       font-size: 14px
     &__info
       font-size: 14px
     &__phone
       font-size: 18px
+@media (min-width: 321px)
+  .modal
+    &__subtitle
+      width: 90%
+      margin: 0 auto
+      margin-top: 30px
+    &__form
+      margin-top: 35px

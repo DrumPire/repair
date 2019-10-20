@@ -1,7 +1,7 @@
 .offer
-  padding-top: 77px
+  padding-top: 75px
   padding-bottom: 92px
-  background: url('../img/offer/offer-bg.png') no-repeat
+  background: url('../img/offer/offer-bg.jpg') no-repeat
   background-position: right
   background-size: contain
   box-sizing: border-box
@@ -56,7 +56,7 @@
     font-size: 24px
     line-height: 35px
     +bold
-    margin-bottom: 19px
+    margin-bottom: 17px
   &-subtitle
     display: block
     width: 232px
@@ -64,9 +64,34 @@
     +reg
     margin-bottom: 30px
     line-height: 1.2
+.offer  
+  &-input
+    &__group
+      display: inline-block
+      width: 240px
+      position: relative
+      &:first-child
+        margin-right: 10px
+  &__form
+    position: relative
+.done
+  display: none
+  font-size: 22px
+  line-height: 24px
+  +reg
+.visibl
+  display: block
+  position: absolute
+  bottom: 0
+  left: 42%
+  transform: translateX(-50%)
+  color: #28F41A
 @media (max-width: 1200px)
   .offer
     background-size: cover
+    &-input
+      &__group
+        width: 260px  
     &-block
       padding-right: 0
     &__input
@@ -80,18 +105,29 @@
       flex-direction: column
     &-call
       margin-top: 14px
+      padding-right: 0
+  .section
+    &-title
+      text-align: center
+  .visibl
+    bottom: -23px
+    left: 50%
 @media (max-width: 768px)
   .offer
     background: #fff
+    &-input
+      &__group
+        max-width: 540px
+        width: 100%
     &-block
       width: 100%
     &__input
       max-width: 540px
+      margin-bottom: 30px
     &__button
       max-width: 540px
     &__contacts
-      max-width: 540px
-      width: 100%
+      width: 104%
       flex-direction: row
       justify-content: space-evenly
     &-call
@@ -100,7 +136,12 @@
 @media (max-width: 567px)
   .offer
     padding-top: 43px
-    padding-bottom: 50px
+    padding-bottom: 55px
+    &-input
+      &__group
+        width: 275px
+        height: 65px
+        margin-bottom: 10px
     &__contacts
       flex-direction: column
       padding-left: 5px
@@ -111,6 +152,7 @@
       padding-left: 23px
     &__button
       max-width: 275px
+      width: 100%
       margin-bottom: 19px
     &-call
       margin-top: 8px
@@ -119,6 +161,7 @@
       font-size: 18px
       line-height: 1.2
       width: 266px
+      text-align: left
     &-subtitle
       font-size: 14px
       margin-bottom: 26px
@@ -128,3 +171,31 @@
     margin: 0 auto
     display: block
     line-height: 1.3
+  .visibl
+    bottom: -6px
+@media screen and(min-width: 321px) and(max-width: 1200px)
+  .offer
+    &-input
+      &__group
+        display: block
+        margin: 0 auto
+        margin-bottom: 15px
+        &:first-child
+          margin-right: auto 
+    &__button
+      display: block
+      margin: 0 auto
+      margin-bottom: 19px
+    &-call
+      margin: 0 auto
+      width: 222px
+    &__info
+      margin: 0 auto
+      margin-bottom: 10px
+  .section
+    &-title
+      margin: 0 auto
+      margin-bottom: 26px
+    &-subtitle
+      margin: 0 auto
+      margin-bottom: 26px

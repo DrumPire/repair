@@ -1,0 +1,72 @@
+.footer
+  position: relative
+.map
+  position: absolute
+  top: 0
+  left: 0
+  width: 50%
+.contacts
+  padding-top: 95px
+  padding-left: 68.3%
+  width: 50%
+  &__title
+    font-size: 22px
+    line-height: 1.44
+    +bold
+    margin-bottom: 96px
+  &-block
+    display: flex
+    justify-content: flex-end
+  &-list
+    padding: 0
+    list-style: none
+    li:nth-child(2)
+      margin-bottom: 31px
+    &__text
+      font-size: 16px
+      line-height: 26px
+      width: 195px
+      letter-spacing: 0.26px
+      margin-top: -4px
+      +reg
+      span 
+        +bold
+    &__item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 35px
+      a 
+        margin-left: 2px
+    &__icon
+      width: 20px
+      height: 20px
+      text-align: center
+      line-height: 20px
+      margin-right: 21px
+.google-map
+  width: 100%
+  height: 640px
+  border: 0
+@media (max-width: 768px)
+  .contacts
+    width: 100%
+    padding-left: 0
+    display: flex
+    flex-direction: column
+    align-items: end
+    &-block
+  .map
+    top: 100%
+    width: 100%
+@media (max-width: 567px)
+  .contacts
+    padding-top: 63px
+    &__title
+      font-size: 18px
+      line-height: 1.25
+      margin-bottom: 36px
+    &-list
+      &__icon
+        margin-right: 13px
+  .map
+    top: 105%
